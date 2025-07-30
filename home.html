@@ -1,0 +1,144 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   BookLoop - Buy &amp; Sell Used Books
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 min-h-screen flex flex-col">
+  <!-- Navbar -->
+  <header class="bg-gradient-to-r from-blue-700 to-indigo-600 text-white shadow-md">
+   <nav class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6 md:px-12">
+    <div class="flex items-center space-x-3 font-extrabold text-2xl">
+     <img alt="Stack of colorful books icon" class="w-8 h-8" height="32" src="https://storage.googleapis.com/a1aa/image/17c3d187-1633-48a5-ee0c-4a28214abbf7.jpg" width="32"/>
+     <span>
+      BookLoop
+     </span>
+    </div>
+    <ul class="hidden md:flex space-x-10 font-semibold text-lg">
+     <li>
+      <a class="hover:underline hover:text-yellow-300" href="index.html">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline hover:text-yellow-300" href="buy.html">
+       Buy Books
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline hover:text-yellow-300" href="sell.html">
+       Sell Books
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline hover:text-yellow-300" href="contact.html">
+       Contact
+      </a>
+     </li>
+    </ul>
+    <button aria-label="Toggle menu" class="md:hidden focus:outline-none focus:ring-2 focus:ring-yellow-300" id="mobile-menu-button">
+     <i class="fas fa-bars text-2xl">
+     </i>
+    </button>
+   </nav>
+   <!-- Mobile menu -->
+   <div class="hidden bg-indigo-700 text-white px-6 pb-4 md:hidden" id="mobile-menu">
+    <ul class="flex flex-col space-y-3 font-semibold text-lg">
+     <li>
+      <a class="block hover:underline hover:text-yellow-300" href="index.html">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="block hover:underline hover:text-yellow-300" href="buy.html">
+       Buy Books
+      </a>
+     </li>
+     <li>
+      <a class="block hover:underline hover:text-yellow-300" href="sell.html">
+       Sell Books
+      </a>
+     </li>
+     <li>
+      <a class="block hover:underline hover:text-yellow-300" href="contact.html">
+       Contact
+      </a>
+     </li>
+    </ul>
+   </div>
+  </header>
+  <!-- Main content for Home page -->
+  <main class="flex-grow max-w-5xl mx-auto px-6 py-12">
+   <section class="text-center mb-16">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+     Buy &amp; Sell Used Books Easily
+    </h1>
+    <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
+     Save money, save trees, and support fellow readers by joining our community of book lovers.
+    </p>
+    <div class="flex justify-center space-x-6">
+     <a class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-6 py-3 rounded-lg shadow-md transition" href="buy.html">
+      Start Buying
+     </a>
+     <a class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition" href="sell.html">
+      Start Selling
+     </a>
+    </div>
+   </section>
+   <section class="grid md:grid-cols-3 gap-10">
+    <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
+     <img alt="Bookshelf filled with colorful used books" class="rounded-md mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/7bc3b803-9c4c-47b4-fb0d-4dc537adb989.jpg" width="200"/>
+     <h2 class="text-xl font-bold mb-2">
+      Wide Selection
+     </h2>
+     <p class="text-gray-600">
+      Explore thousands of used books across all genres and categories.
+     </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
+     <img alt="Hand holding money symbolizing savings" class="rounded-md mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/4e9fc72b-0528-4603-be61-f4bd2816b9a9.jpg" width="200"/>
+     <h2 class="text-xl font-bold mb-2">
+      Save Money
+     </h2>
+     <p class="text-gray-600">
+      Get great deals on quality used books and sell your own for cash.
+     </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
+     <img alt="Green leaf symbolizing eco-friendly and sustainability" class="rounded-md mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/d112f763-9c53-4bf1-17fb-14c33a69c851.jpg" width="200"/>
+     <h2 class="text-xl font-bold mb-2">
+      Eco Friendly
+     </h2>
+     <p class="text-gray-600">
+      Reduce waste and support sustainability by reusing books.
+     </p>
+    </div>
+   </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-700 to-indigo-600 text-white text-center py-6 mt-12">
+   <p>
+    © 2025 BookLoop. All rights reserved.
+   </p>
+  </footer>
+  <script>
+   // Mobile menu toggle
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
